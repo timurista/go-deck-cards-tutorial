@@ -1,11 +1,11 @@
 package main
 
 func main() {
-	// cards := newDeck()
-	// err := cards.saveToFile("test-deck.deck")
-	// if err != nil {
-	// 	panic(err)
-	// }
+	cards := newDeck()
+	err := cards.saveToFile("test-deck.deck")
+	if err != nil {
+		panic(err)
+	}
 
 	newCards := newDeckFromFile("test-deck.deck")
 	newCards.shuffle()
