@@ -8,6 +8,7 @@ func main() {
 	// }
 
 	newCards := newDeckFromFile("test-deck.deck")
+	newCards.shuffle()
 	newCards.print()
 
 	// hand, _ := deal(cards, 5)
