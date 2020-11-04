@@ -2,12 +2,13 @@ package main
 
 func main() {
 	cards := newDeck()
-	err := cards.saveToFile("test-deck.deck")
+	filename := "test-deck.deck"
+	err := cards.saveToFile(filename)
 	if err != nil {
 		panic(err)
 	}
 
-	newCards := newDeckFromFile("test-deck.deck")
+	newCards := newDeckFromFile(filename)
 	newCards.shuffle()
 	newCards.print()
 
