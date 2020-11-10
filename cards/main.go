@@ -4,6 +4,7 @@ func main() {
 	cards := newDeck()
 	filename := "test-deck.deck"
 	err := cards.saveToFile(filename)
+
 	if err != nil {
 		panic(err)
 	}
